@@ -341,7 +341,7 @@
             searchBtn.addEventListener("click", () => {
                 status.innerHTML = "搜尋中...";
                 let t = searchInput.value,
-                    e = `${e}?type=search&name=${encodeURIComponent(t)}`;
+                    e = `${url}?type=search&name=${encodeURIComponent(t)}`;
                 fetch(e)
                     .then((t) => t.json())
                     .then((t) => {
